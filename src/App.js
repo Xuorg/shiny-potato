@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+import { recettes, RecetteType } from './recettes';
+import { ButtonGroup, Button } from "react-bootstrap";
 
 function App() {
+  const [filter, setFilter] = useState(RecetteType.ENTREE);
+  const [selectedRecette, setSelectedRecette] = useState();
+
+  const filteredRecettes = recettes.filter((recette) => recette.type === filter);
+
+  function changeType(type) {
+    setFilter(type);
+    setSelectedRecette();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <ButtonGroup aria-label="Basic example">
+      {
+        Array.from(Object.values(RecetteType)).map((type) => (
+          <Button
+            variant="secondary"
+            key={type}
+            onClick={() => changeType(type)}>{type}</Button>
+        ))
+      }
+      </ButtonGroup>
+      <ButtonGroup vertical>
+        {
+          filteredRecettes.map((recette) => (
+            <Button
+              key={recette.name}
+              onClick={() => setSelectedRecette(recette)}>{recette.name}</Button>
+          ))
+        }
+      </ButtonGroup>
+      {
+        selectedRecette && selectedRecette.name
+      }
     </div>
   );
 }
