@@ -31,8 +31,8 @@ export const recettes = [
     steps: [
       'Eplucher les carottes et couper-les en petites rondelles.',
       'Dans une casserole, préparer un bouillon de poulet. La quantité d\'eau doit être suffisante pour recouvrir les carottes.',
-      'Dans une poêle, faire fondre le beurre. Ajouter les carottes. Remuer un peu puis, y ajouter le bouillon et le sucre.'
-      'Laisser à petit feu sans couvrir afin de permettre à l\'eau de s\'évaporer pendant 20/25 minutes.'
+      'Dans une poêle, faire fondre le beurre. Ajouter les carottes. Remuer un peu puis, y ajouter le bouillon et le sucre.',
+      'Laisser à petit feu sans couvrir afin de permettre à l\'eau de s\'évaporer pendant 20/25 minutes.',
     ]
   },
   {
@@ -140,7 +140,7 @@ export const recettes = [
       new Ingredient('vinaigre de cidre', 35, 'cl'),
       new Ingredient('sel', 4, 'c.à.c'),
       new Ingredient('sucre roux', 2, 'c.à.s'),
-      new Ingredient('poivre noir', 2, 'c.à.c),
+      new Ingredient('poivre noir', 2, 'c.à.c'),
       new Ingredient('cumin', 1, 'c.à.c'),
     ],
     steps: [
