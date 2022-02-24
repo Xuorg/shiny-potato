@@ -16,28 +16,42 @@ function App() {
 
   return (
     <div>
-       <ButtonGroup aria-label="Basic example">
-      {
-        Array.from(Object.values(RecetteType)).map((type) => (
-          <Button
+       <div class="App-header">
+         <ButtonGroup size="lg">
+          {/* <Button
             variant="secondary"
-            key={type}
-            onClick={() => changeType(type)}>{type}</Button>
-        ))
-      }
-      </ButtonGroup>
-      <ButtonGroup vertical>
+            class="btn-secondary Button-home"
+            key="home"
+            onClick={() => changeType(RecetteType.ENTREE)}>Potato</Button> */}
         {
-          filteredRecettes.map((recette) => (
+          Array.from(Object.values(RecetteType)).map((type) => (
             <Button
-              key={recette.name}
-              onClick={() => setSelectedRecette(recette)}>{recette.name}</Button>
+              variant="secondary"
+              key={type}
+              onClick={() => changeType(type)}>{type}</Button>
           ))
         }
-      </ButtonGroup>
-      {
-        selectedRecette && selectedRecette.name
-      }
+        </ButtonGroup>
+      </div>
+      <div class="App-content">
+        <div class="Vertical-menu">
+          <ButtonGroup vertical class="btn-group-vertical btn-group-vertical-left">
+            {
+              filteredRecettes.map((recette) => (
+                <Button
+                  class="btn btn-left"
+                  key={recette.name}
+                  onClick={() => setSelectedRecette(recette)}>{recette.name}</Button>
+              ))
+            }
+          </ButtonGroup>
+        </div>
+        <div>
+          {
+            selectedRecette && selectedRecette.name
+          }
+        </div>
+      </div>
     </div>
   );
 }

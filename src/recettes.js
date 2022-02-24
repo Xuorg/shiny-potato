@@ -19,6 +19,7 @@ export const recettes = [
     type: RecetteType.ENTREE,
     prepTime: 10,
     cookingTime: 30,
+    image: '',
     ingredients: [
       new Ingredient('riz', 60, 'g'),
       new Ingredient('oignon', 1),
@@ -33,6 +34,7 @@ export const recettes = [
     type: RecetteType.PLAT,
     prepTime: 10,
     cookingTime: 30,
+    image: '',
     ingredients: [
       new Ingredient('riz', 60, 'g'),
       new Ingredient('oignon', 1),
@@ -47,6 +49,7 @@ export const recettes = [
     type: RecetteType.PLAT,
     prepTime: 10,
     cookingTime: 30,
+    image: '',
     ingredients: [
       new Ingredient('riz', 60, 'g'),
       new Ingredient('oignon', 1),
