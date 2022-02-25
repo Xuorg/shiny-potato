@@ -72,6 +72,14 @@
   margin: 2%;
 }
 
+.btn-ingredient {
+  margin: 0% 1%;
+}
+
+.badge-quantity {
+  background-color: white !important;
+}
+
 .Recette-steps {
 
 }

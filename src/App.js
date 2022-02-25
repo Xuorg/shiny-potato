@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from "react";
 import { recettes, RecetteType } from './recettes';
-import { ButtonGroup, Button, Container, Row, Col, ListGroup } from "react-bootstrap";
+import { ButtonGroup, Button, Container, Row, Col, Badge } from "react-bootstrap";
 
 function App() {
   const [filter, setFilter] = useState(RecetteType.ENTREE);
@@ -64,26 +64,33 @@ function App() {
                   </span>
                 </div>
                 <div class="Recette-persons">
-                  { selectedRecette.nbPersonnes } personnes
+                  Ingrédients : { selectedRecette.nbPersonnes } personnes
                 </div>
                 { selectedRecette.comment &&
                   <div class="Recette-comment">
                     "{ selectedRecette.comment }"
                   </div>
                 }
-                <ListGroup class="Recette-ingredients">
+                <div class="Recette-ingredients">
                   {
                     selectedRecette.ingredients.map((ingredient) => (
-                      <ListGroup.Item>
-                        {
-                          (ingredient.quantity === 0 ? '' : ingredient.quantity + ' ') +
-                          ingredient.unity + ' ' +
-                          ingredient.name
+                      <Button
+                        disabled
+                        size="lg"
+                        variant="outline-dark"
+                        className="btn-ingredient"> 
+                        { ingredient.name }
+                        { ingredient.quantity > 0 &&
+                          <Badge
+                            text="dark"
+                            className="badge-quantity">
+                            { ingredient.quantity + ingredient.unity }
+                          </Badge>
                         }
-                      </ListGroup.Item>
+                      </Button>
                     ))
                   }
-                </ListGroup>
+                </div>
                 <div class="Recette-steps">
                   {
                     selectedRecette.steps.map((step) => (
