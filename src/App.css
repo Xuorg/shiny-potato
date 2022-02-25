@@ -26,17 +26,10 @@
   border-radius: 0;
 }
 
-.App-content {
-  display: flex;
-}
-
-.Vertical-menu {
-  width: 15%;
-}
-
 .btn-group-vertical {
   width: 100%;
   border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .btn-group-vertical > .btn {
@@ -47,4 +40,38 @@
   box-shadow: none;
   text-shadow: none;
   color: gray
+}
+
+.Recette {
+  text-align: center;
+}
+
+.Recette-name {
+  width: 100%;
+  padding: 2% 0%;
+}
+
+.Recette-timers {
+  width: 100%;
+}
+
+.Recette-timer {
+  padding: 0% 5%;
+}
+
+.Recette-persons {
+  margin: 2%;
+}
+
+.Recette-comment {
+  margin: 2%;
+  font-style: italic;
+}
+
+.Recette-ingredients {
+  margin: 2%;
+}
+
+.Recette-steps {
+
 }
