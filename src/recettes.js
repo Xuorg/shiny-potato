@@ -106,7 +106,7 @@ export const recettes = [
   },
   {
     name: 'Soupe de carottes au curry',
-    type: RecetteType.DESSERT,
+    type: RecetteType.ENTREE,
     prepTime: 15,
     cookingTime: 20,
     image: '',
@@ -150,6 +150,33 @@ export const recettes = [
       'Recouvrez les betteraves du liquide bouillant.',
       'Fermez le bocal et laissez refroidir à température ambiante.',
       'Laissez macérer 24 h au moins avant de déguster. Les pickles peuvent se conserver plusieurs mois dans un placard, et au réfrigérateur après ouverture.',
+    ]
+  },
+  {
+    name: 'Gratin de pâtes',
+    type: RecetteType.PLAT,
+    prepTime: 15,
+    cookingTime: 15,
+    image: '',
+    nbPersonnes: 2,
+    comment: `Vous pouvez réaliser une multitude de variantes en ajoutant du bleu d'Auvergne, du fromage de chèvre...
+Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: carottes, champignons, courgettes, broccoli...`,
+    ingredients: [
+      new Ingredient('lardons', 100, 'g'),
+      new Ingredient('pâtes', 200, 'g'),
+      new Ingredient('champignons', 2),
+      new Ingredient('tomate', 1),
+      new Ingredient('crème', 3, 'c.à.s'),
+      new Ingredient('gruyère'),
+    ],
+    steps: [
+      'Cuire les pâtes.',
+      'Pendant ce temps, faire revenir les lardons.',
+      'Couper la tomate en dés et les champignons en lamelles.',
+      'Mélanger dans un plat à gratin les légumes, les lardons et les pâtes.',
+      'Ajouter la crème fraîche.',
+      'Terminer par une généreuse couche de gruyère râpé.',
+      'Enfourner à four chaud (180°) et laisser cuire jusqu\'à ce que le gruyère prenne une jolie couleur dorée',
     ]
   },
 ]
