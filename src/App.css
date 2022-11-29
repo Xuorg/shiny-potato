@@ -1,20 +1,26 @@
 .App-header {
-  background-color: #6da0e8;
-  flex-direction: column;
+  background-color: #000a82;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
+.nav-link, .nav-link:hover, .nav-link:focus {
+  color: white;
+  border-color: #000a82 !important;
+}
+
+
+
+
+/* .App-link {
   color: #61dafb;
 }
 
 .btn-group-lg > .btn {
   font-size: 1.5rem;
   padding: 5% 15%;
-
 }
 
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
@@ -79,7 +85,4 @@
 .badge-quantity {
   background-color: white !important;
 }
-
-.Recette-steps {
-
-}
+*/
