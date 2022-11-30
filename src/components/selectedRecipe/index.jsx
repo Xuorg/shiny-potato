@@ -7,9 +7,9 @@ export function SelectedRecipe({selectedRecipe}) {
         { selectedRecipe &&
           <div className="Recette">
             <div className="Recette-name">
-              <h1>
+              <h2>
                 { selectedRecipe.name }
-              </h1>
+              </h2>
             </div>
             <div className="Recette-timers">
               <span className="Recette-timer">
@@ -61,3 +61,14 @@ export function SelectedRecipe({selectedRecipe}) {
     </Container>
   )
 }
+
+/*
+                  title
+
+nb personne                       liste
+prep time                         ingrédient
+cooking time                      jusque
+comment                           ici
+
+recette---------------------------jusqu'au bout
+*/

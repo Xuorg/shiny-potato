@@ -7,15 +7,15 @@ export function RecipesList({filter, setSelectedRecipe}) {
   return (
     <Container>
       <Row>
+        <h5 className="recipes-list-type">{filter}</h5>
         {
           filteredRecettes.map((recette, index) => (
             <Col
               xs={3}
               key={index}
-              className="mt-1">
+              className="mt-2 mb-3">
               <Card
-                className="grow text-center h-100"
-                bg="light"
+                className="card grow text-center h-100"
                 onClick={() => setSelectedRecipe(recette)}>
                 <Card.Body className="d-flex flex-column justify-content-between">
                   <Card.Title>{recette.name}</Card.Title>
