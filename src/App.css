@@ -1,17 +1,43 @@
+:root {
+  --blue: #000a82;
+  --white: white;
+  --gray-1: #f8f9fa;
+  --gray-2: #e9ecef;
+  --gray-3: #dee2e6;
+  --gray-4: #ced4da;
+  --gray-5: #adb5bd;
+  --gray-6: #6c757d;
+  --gray-7: #495057;
+  --gray-8: #343a40;
+  --gray-9: #212529;
+  --header-font-size: calc(10px + 2vmin);
+  
+}
+
+
 .App-header {
-  background-color: #000a82;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--blue);
+  font-size: var(--header-font-size);
+  color: var(--gray-1);
+  margin: 1%;
 }
 
 .nav-link, .nav-link:hover, .nav-link:focus {
-  color: white;
-  border-color: #000a82 !important;
+  color: var(--gray-1);
+  border-color: var(--background) !important;
 }
 
+.nav-link:focus {
+  font-weight: bold;
+}
 
+.card-title {
+  color: var(--gray-7);
+}
+
+.card-text {
+  color: var(--gray-6);
+}
 
 
 /* .App-link {

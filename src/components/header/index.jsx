@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { RecetteType } from '../../recettes';
 import { Nav } from "react-bootstrap";
 
@@ -8,10 +7,11 @@ export function Header({onClick}) {
     onClick(type);
   }
   return (
-    <Nav justify variant="tabs" className="App-header">
+    <Nav justify className="App-header navbar sticky-top rounded">
       {
         Array.from(Object.values(RecetteType)).map((type, index) => (
-          <Nav.Item key={index}>
+          <Nav.Item
+            key={index}>
             <Nav.Link
               onClick={() => changeType(type)}>{type}</Nav.Link>
           </Nav.Item>

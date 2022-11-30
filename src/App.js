@@ -10,7 +10,7 @@ function App() {
   const [selectedRecipe, setSelectedRecipe] = useState();
 
   return (
-    <div>
+    <div className="main">
       <Header onClick={(type) => { setFilter(type); setSelectedRecipe(undefined) }} />
       {
         !!selectedRecipe ?
