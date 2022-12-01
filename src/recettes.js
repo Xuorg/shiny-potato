@@ -242,4 +242,75 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Verser l\'appareil dans un moule à cake, faire cuire au four préchauffé à 200°C, thermostat 6-7, pendant 45 minutes. Laisser refroidir.',
     ]
   },
+  {
+    name: 'Gratin de gnocchis tomates basilic',
+    type: RecetteType.PLAT,
+    prepTime: 10,
+    cookingTime: 15,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('gnocchis', 800, 'g'),
+      new Ingredient('sauce tomate', 20, 'cl'),
+      new Ingredient('gruyère rapé', 150, 'g'),
+      new Ingredient('basilic'),
+    ],
+    steps: [
+      'Préchauffez le four à 220°C.',
+      'Faire cuire les gnocchis pendant 1 minute dans une casserole d\'eau bouillante.',
+      'Égouttez-les.',
+      'Versez les gnocchis dans un plat allant au four.',
+      'Recouvrez avec la sauce tomates, le gruyère rapé et le basilic. Mélangez.',
+      'Enfournez pendant 15 minutes jusqu\'à ce que le gratin soit légèrement doré',
+    ]
+  },
+  {
+    name: 'Pâtes au saumon et à la crème',
+    type: RecetteType.PLAT,
+    prepTime: 20,
+    cookingTime: 10,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('pâtes', 300, 'g'),
+      new Ingredient('citron', 1/2),
+      new Ingredient('crème fraiche', 25, 'cl'),
+      new Ingredient('saumon', 120, 'g'),
+      new Ingredient('câpres', 1, ' c.à.s'),
+      new Ingredient('aneth'),
+    ],
+    steps: [
+      'Dans une grande casserole d\'eau bouillante salée, faites cuire les pâtes comme indiqué sur le paquet.',
+      'Dans un bol, fouettez la crème, le saumon coupé en petit morceaux, les câpres, l\'aneth, le jus de citron.',
+      'Égouttez les pâtes puis remettez les dans la casserole, sur feu doux.',
+      'Ajoutez la crème au saumon. Réchauffez 5 minutes en mélangeant.',
+    ]
+  },
+  {
+    name: 'Chili con carne',
+    type: RecetteType.PLAT,
+    prepTime: 45,
+    cookingTime: 60,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('haricots rouges', 300, 'g'),
+      new Ingredient('oignon', 1),
+      new Ingredient('boeuf haché', 500, 'g'),
+      new Ingredient('tomates pelées', 150, 'g'),
+      new Ingredient('ail', 2),
+      new Ingredient('sauce tomate', 40, 'cl'),
+      new Ingredient('cumin, origan, sel, poivre'),
+    ],
+    steps: [
+      'Égouttez les haricots rouges.',
+      'Hachez les oignons et les faire revenir dans une poêle avec de l\'huile jusqu\'à ce qu\'ils deviennent translucide.',
+      'Ajoutez la viande hachée, mélangez et remuez sur feu moyen.',
+      'Ajoutez les tomates coupées, l\'origan, le cumin, la sauce tomate et laissez mijoter 5 minutes.',
+      'Ajoutez les haricots rouges. Mélangez et laissez cuire 20 minutes à feu doux.',
+    ]
+  },
 ]
