@@ -1,74 +1,68 @@
-import { Button, Badge, Container } from "react-bootstrap";
+import { Container, Row, Col, Button, Badge, Card, ListGroup } from "react-bootstrap";
 
 export function SelectedRecipe({selectedRecipe}) {
+  let comment = undefined;
+
+  if (selectedRecipe.comment) {
+    comment = <Card.Footer className="fst-italic">"{ selectedRecipe.comment }"</Card.Footer>;
+  }
+
   return (
-    <Container>
-      <div style={{ display: 'flex' }}>
-        { selectedRecipe &&
-          <div className="Recette">
-            <div className="Recette-name">
-              <h2>
-                { selectedRecipe.name }
-              </h2>
-            </div>
-            <div className="Recette-timers">
-              <span className="Recette-timer">
-                Préparation : { selectedRecipe.prepTime }
-              </span>
-              <span className="Recette-timer">
-                Cuisson : { selectedRecipe.cookingTime }
-              </span>
-            </div>
-            <div className="Recette-persons">
-              Ingrédients : { selectedRecipe.nbPersonnes } personnes
-            </div>
-            { selectedRecipe.comment &&
-              <div className="Recette-comment">
-                "{ selectedRecipe.comment }"
-              </div>
-            }
-            <div className="Recette-ingredients">
-              {
-                selectedRecipe.ingredients.map((ingredient, index) => (
-                  <Button
-                    disabled
-                    size="lg"
-                    variant="outline-dark"
-                    key={index}
-                    className="btn-ingredient"> 
-                    { ingredient.name }
-                    { ingredient.quantity > 0 &&
-                      <Badge
-                        text="dark"
-                        className="badge-quantity">
-                        { ingredient.quantity + ingredient.unity }
-                      </Badge>
+    <Container className="text-center">
+      { selectedRecipe &&
+        <div>
+          <Row className="m-4">
+            <Col>
+              <h4 className="recipe-name">{ selectedRecipe.name }</h4>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col className="d-flex flex-column justify-content-center">
+              <Card>
+                <ListGroup>
+                  <ListGroup.Item>{ selectedRecipe.nbPersonnes } personnes</ListGroup.Item>
+                  <ListGroup.Item>Préparation : { selectedRecipe.prepTime }</ListGroup.Item>
+                  <ListGroup.Item>Cuisson : { selectedRecipe.cookingTime }</ListGroup.Item>
+                </ListGroup>
+                { comment }
+              </Card>
+            </Col>
+            <Col>
+                <Card>
+                  <ListGroup>
+                    { selectedRecipe.ingredients.map((ingredient, index) => (
+                      <ListGroup.Item key={index}>
+                        { ingredient.name }
+                        { ingredient.quantity > 0 &&
+                          <Badge
+                            text="dark"
+                            className="badge-quantity">
+                            { ingredient.quantity + ' ' + ingredient.unity }
+                          </Badge>
+                        }
+                      </ListGroup.Item>
+                      ))
                     }
-                  </Button>
-                ))
-              }
-            </div>
-            <div className="Recette-steps">
+                  </ListGroup>
+                </Card>
+            </Col>
+          </Row>
+          <Row>
+            <ListGroup>
               {
                 selectedRecipe.steps.map((step, index) => (
-                  <div key={index}>{ step }</div>
+                  <ListGroup.Item
+                    key={index}
+                    className="border border-0">
+                      <span>{ index + 1 + '. ' }</span>
+                      <span>{ step }</span>
+                  </ListGroup.Item>
                 ))
               }
-            </div>
-          </div>
-        }
-      </div>
+            </ListGroup>
+          </Row>
+        </div>
+      }
     </Container>
   )
 }
-
-/*
-                  title
-
-nb personne                       liste
-prep time                         ingrédient
-cooking time                      jusque
-comment                           ici
-
-recette---------------------------jusqu'au bout
-*/

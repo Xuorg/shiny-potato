@@ -1,43 +1,29 @@
 :root {
-  /*
-  --blue: #000a82;
-  --white: white;
-  --gray-1: #f8f9fa;
-  --gray-2: #e9ecef;
-  --gray-3: #dee2e6;
-  --gray-4: #ced4da;
-  --gray-5: #adb5bd;
-  --gray-6: #6c757d;
-  --gray-7: #495057;
-  --gray-8: #343a40;
-  --gray-9: #212529;
-  */
   --header-font-size: calc(10px + 2vmin);
 
   --light-blue: #8D99AE;
   --dark-blue: #2B2D42;
   --red: #D90429;
-  --light-gray: #EDF2F4;
+  --light-grey: #EDF2F4;
 }
 
 
 .App-header {
   background-color: var(--dark-blue);
   font-size: var(--header-font-size);
-  color: var(--light-gray);
+  color: var(--light-grey);
   margin: 1%;
 }
 
 .nav-link, .nav-link:hover, .nav-link:focus {
-  color: var(--light-gray);
+  color: var(--light-grey);
 }
 
 .card {
-  background-color: var(--light-gray);
   border-color: var(--light-blue);
 }
 
-.card-title {
+.card-title, .card-footer, .list-group-item {
   color: var(--dark-blue);
 }
 
@@ -49,128 +35,10 @@
   color: var(--light-blue);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Recette {
-  text-align: center;
-}
-
-.Recette-name {
-  width: 100%;
-  padding: 2% 0%;
-}
-
-.Recette-timers {
-  width: 100%;
-}
-
-.Recette-timer {
-  padding: 0% 5%;
-}
-
-.Recette-persons {
-  margin: 2%;
-}
-
-.Recette-comment {
-  margin: 2%;
-  font-style: italic;
-}
-
-.Recette-ingredients {
-  margin: 2%;
-}
-
-.btn-ingredient {
-  margin: 0% 1%;
-}
-
 .badge-quantity {
   background-color: white !important;
 }
 
-
-/* .App-link {
-  color: #61dafb;
+.recipe-name {
+  color: var(--dark-blue);
 }
-
-.btn-group-lg > .btn {
-  font-size: 1.5rem;
-  padding: 5% 15%;
-}
-
-.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
-  text-align: center;
-  background-color: #6da0e8;
-  border-color: #6da0e8;
-  box-shadow: none;
-  text-shadow: none;
-  border-radius: 0;
-}
-
-.btn-group-vertical {
-  width: 100%;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.btn-group-vertical > .btn {
-  text-align: left;
-  padding: 8% 5% 8% 5%;
-  background-color: #f7f7f7;
-  border: none;
-  box-shadow: none;
-  text-shadow: none;
-  color: gray
-}
-
-.Recette {
-  text-align: center;
-}
-
-.Recette-name {
-  width: 100%;
-  padding: 2% 0%;
-}
-
-.Recette-timers {
-  width: 100%;
-}
-
-.Recette-timer {
-  padding: 0% 5%;
-}
-
-.Recette-persons {
-  margin: 2%;
-}
-
-.Recette-comment {
-  margin: 2%;
-  font-style: italic;
-}
-
-.Recette-ingredients {
-  margin: 2%;
-}
-
-.btn-ingredient {
-  margin: 0% 1%;
-}
-
-.badge-quantity {
-  background-color: white !important;
-}
-*/

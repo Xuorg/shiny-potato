@@ -240,9 +240,6 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Battre les blancs en neige avec une pincée de sel. Les incorporer délicatement à la préparation.',
       'Ajouter les morceaux d\'olive, de tomate séchée, et l\'ail, ainsi que les fromages râpés. Bien mélanger.',
       'Verser l\'appareil dans un moule à cake, faire cuire au four préchauffé à 200°C, thermostat 6-7, pendant 45 minutes. Laisser refroidir.',
-      '',
-      '',
-      '',
     ]
   },
 ]
