@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shiny-potato/static/css/main.5453395d.css",
-    "main.js": "/shiny-potato/static/js/main.44c84b0e.js",
+    "main.css": "/shiny-potato/static/css/main.d84e6ae4.css",
+    "main.js": "/shiny-potato/static/js/main.53afd61e.js",
     "index.html": "/shiny-potato/index.html",
-    "main.5453395d.css.map": "/shiny-potato/static/css/main.5453395d.css.map",
-    "main.44c84b0e.js.map": "/shiny-potato/static/js/main.44c84b0e.js.map"
+    "main.d84e6ae4.css.map": "/shiny-potato/static/css/main.d84e6ae4.css.map",
+    "main.53afd61e.js.map": "/shiny-potato/static/js/main.53afd61e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5453395d.css",
-    "static/js/main.44c84b0e.js"
+    "static/css/main.d84e6ae4.css",
+    "static/js/main.53afd61e.js"
   ]
 }
