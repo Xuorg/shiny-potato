@@ -1,20 +1,114 @@
-.App-header {
-  background-color: #6da0e8;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  /*
+  --blue: #000a82;
+  --white: white;
+  --gray-1: #f8f9fa;
+  --gray-2: #e9ecef;
+  --gray-3: #dee2e6;
+  --gray-4: #ced4da;
+  --gray-5: #adb5bd;
+  --gray-6: #6c757d;
+  --gray-7: #495057;
+  --gray-8: #343a40;
+  --gray-9: #212529;
+  */
+  --header-font-size: calc(10px + 2vmin);
+
+  --light-blue: #8D99AE;
+  --dark-blue: #2B2D42;
+  --red: #D90429;
+  --light-gray: #EDF2F4;
 }
 
-.App-link {
+
+.App-header {
+  background-color: var(--dark-blue);
+  font-size: var(--header-font-size);
+  color: var(--light-gray);
+  margin: 1%;
+}
+
+.nav-link, .nav-link:hover, .nav-link:focus {
+  color: var(--light-gray);
+}
+
+.card {
+  background-color: var(--light-gray);
+  border-color: var(--light-blue);
+}
+
+.card-title {
+  color: var(--dark-blue);
+}
+
+.card-text {
+  color: var(--light-blue);
+}
+
+.recipes-list-type {
+  color: var(--light-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Recette {
+  text-align: center;
+}
+
+.Recette-name {
+  width: 100%;
+  padding: 2% 0%;
+}
+
+.Recette-timers {
+  width: 100%;
+}
+
+.Recette-timer {
+  padding: 0% 5%;
+}
+
+.Recette-persons {
+  margin: 2%;
+}
+
+.Recette-comment {
+  margin: 2%;
+  font-style: italic;
+}
+
+.Recette-ingredients {
+  margin: 2%;
+}
+
+.btn-ingredient {
+  margin: 0% 1%;
+}
+
+.badge-quantity {
+  background-color: white !important;
+}
+
+
+/* .App-link {
   color: #61dafb;
 }
 
 .btn-group-lg > .btn {
   font-size: 1.5rem;
   padding: 5% 15%;
-
 }
 
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
@@ -79,7 +173,4 @@
 .badge-quantity {
   background-color: white !important;
 }
-
-.Recette-steps {
-
-}
+*/
