@@ -11,7 +11,8 @@ export function RecipesList({filter, setSelectedRecipe}) {
         {
           filteredRecettes.map((recette, index) => (
             <Col
-              xs={3}
+              xs={6}
+              md={3}
               key={index}
               className="mt-2 mb-3">
               <Card
