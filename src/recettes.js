@@ -313,4 +313,26 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Ajoutez les haricots rouges. Mélangez et laissez cuire 20 minutes à feu doux.',
     ]
   },
+    {
+    name: 'Aiguillettes de poulet au riz',
+    type: RecetteType.PLAT,
+    prepTime: 10,
+    cookingTime: 20,
+    image: '',
+    nbPersonnes: 2,
+    comment: ``,
+    ingredients: [
+      new Ingredient('aiguillettes de poulet', 300, 'g'),
+      new Ingredient('riz', 60, 'g'),
+      new Ingredient('sauce tomate'),
+      new Ingredient('cube de bouillon de volaille'),
+      new Ingredient('eau', 1, 'l'),
+    ],
+    steps: [
+      'Mettez les aiguillettes de poulet à revenir dans une poêle creuse.',
+      'Une fois les aiguillettes revenues, ajoutez l\'eau et le cube de bouillon de volaille.',
+      'Laissez cuire 10 minutes et ajoutez la sauce tomate et le riz.',
+      'Laissez cuire 11 minutes.',
+    ]
+  },
 ]
