@@ -1,8 +1,9 @@
 export const RecetteType = {
   ENTREE: 'Entrée',
-  PLAT: 'Plat',
+  MEAL: 'Plat',
   DESSERT: 'Dessert',
-  BOISSON: 'Boisson',
+  APERITIF: 'Apéro',
+  SEASONING: 'Assaisonnement',
 }
 
 class Ingredient {
@@ -16,7 +17,7 @@ class Ingredient {
 export const recettes = [
   {
     name: 'Carottes vichy',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 20,
     cookingTime: 20,
     image: '',
@@ -37,7 +38,7 @@ export const recettes = [
   },
   {
     name: 'Feuilletés au chèvre et aux pommes',
-    type: RecetteType.ENTREE,
+    type: RecetteType.APERITIF,
     prepTime: 5,
     cookingTime: 15,
     image: '',
@@ -62,7 +63,7 @@ export const recettes = [
   },
   {
     name: 'Fondue aux poireaux',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 30,
     cookingTime: 30,
     image: '',
@@ -86,7 +87,7 @@ export const recettes = [
   },
   {
     name: 'Houmous au Mr Cuisine',
-    type: RecetteType.ENTREE,
+    type: RecetteType.APERITIF,
     prepTime: 0,
     cookingTime: 0,
     image: '',
@@ -129,7 +130,7 @@ export const recettes = [
   },
   {
     name: 'Pickles de betteraves rouges',
-    type: RecetteType.ENTREE,
+    type: RecetteType.APERITIF,
     prepTime: 30,
     cookingTime: 5,
     image: '',
@@ -154,7 +155,7 @@ export const recettes = [
   },
   {
     name: 'Gratin de pâtes',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 15,
     cookingTime: 15,
     image: '',
@@ -181,7 +182,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Gratin de carottes et courgettes au chèvre',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 20,
     cookingTime: 30,
     image: '',
@@ -214,7 +215,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Cake aux olives, tomates séchées et comté',
-    type: RecetteType.ENTREE,
+    type: RecetteType.APERITIF,
     prepTime: 25,
     cookingTime: 45,
     image: '',
@@ -244,7 +245,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Gratin de gnocchis tomates basilic',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 10,
     cookingTime: 15,
     image: '',
@@ -267,7 +268,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Pâtes au saumon et à la crème',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 20,
     cookingTime: 10,
     image: '',
@@ -290,7 +291,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Chili con carne',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 45,
     cookingTime: 60,
     image: '',
@@ -313,9 +314,9 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Ajoutez les haricots rouges. Mélangez et laissez cuire 20 minutes à feu doux.',
     ]
   },
-    {
+  {
     name: 'Aiguillettes de poulet au riz',
-    type: RecetteType.PLAT,
+    type: RecetteType.MEAL,
     prepTime: 10,
     cookingTime: 20,
     image: '',
@@ -333,6 +334,76 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Une fois les aiguillettes revenues, ajoutez l\'eau et le cube de bouillon de volaille.',
       'Laissez cuire 10 minutes et ajoutez la sauce tomate et le riz.',
       'Laissez cuire 11 minutes.',
+    ]
+  },
+{
+    name: 'Cake courgette pesto',
+    type: RecetteType.APERITIF,
+    prepTime: 10,
+    cookingTime: 50,
+    image: '',
+    nbPersonnes: 10,
+    comment: ``,
+    ingredients: [
+      new Ingredient('oeufs', 3),
+      new Ingredient('huile d\'olive', 60, 'g'),
+      new Ingredient('lait', 100, 'g'),
+      new Ingredient('farine', 180, 'g'),
+      new Ingredient('chèvre frais', 100, 'g'),
+      new Ingredient('levure chimique', 1, 'sachet'),
+      new Ingredient('chèvre frais', 1),
+      new Ingredient('pesto', 3, 'c.à.s'),
+      new Ingredient('basilic, sel, poivre'),
+    ],
+    steps: [
+      'Préchauffez le four à 180°C.',
+      'Epluchez et râpez la courgette.',
+      'Fouettez les oeufs avec le lait et l\'huile.',
+      'Ajoutez la farine et la levure chimique puis mélangez',
+      'Ajoutez la courgette râpée, le chèvre frais émietté, le pesto, le basilic, le sel et le poivre puis mélangez.',
+      'Répartir la pâte dans le moule et enfournez 50 minutes.',
+    ]
+  },
+  {
+    name: 'Sauce pour salade de pâte',
+    type: RecetteType.SEASONING,
+    prepTime: 5,
+    cookingTime: 0,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('yaourt crémeux', 100, 'g'),
+      new Ingredient('huile d\'olive', 2, 'c.à.s'),
+      new Ingredient('jus de citron', 2, 'c.à.s'),
+      new Ingredient('aneth, ciboulette, poivre, sel'),
+    ],
+    steps: [
+      'Mélanger le yaourt avec le jus de citron, l\'huile d\'olive, les herbes ciselées.',
+      'Saler et poivrer selon le goût.',
+      'Assaisonner les pâtes de ce mélange.',
+    ]
+  },
+  {
+    name: 'Vinaigrette pour salade de riz',
+    type: RecetteType.SEASONING,
+    prepTime: 5,
+    cookingTime: 0,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('huile d\'olive', 6, 'c.à.s'),
+      new Ingredient('vinaigre de vin', 1, 'c.à.s'),
+      new Ingredient('jus de citron', 1, 'c.à.s'),
+      new Ingredient('moutarde', 2, 'c.à.c'),
+      new Ingredient('aneth, ciboulette, poivre, sel'),
+    ],
+    steps: [
+      'Dans un bol, mélangez le vinaigre, le jus de citron, la moutarde et l\'huile d\'olive.',
+      'Salez, poivrez.',
+      'Ajoutez la ciboulette ciselée.',
+      'Versez cette vinaigrette sur la salade de riz.',
     ]
   },
 ]
