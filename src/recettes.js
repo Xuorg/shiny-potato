@@ -3,7 +3,6 @@ export const RecetteType = {
   MEAL: 'Plat',
   DESSERT: 'Dessert',
   APERITIF: 'Apéro',
-  SEASONING: 'Assaisonnement',
 }
 
 class Ingredient {
@@ -222,25 +221,22 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
     nbPersonnes: 8,
     comment: `Possible d'ajouter les oeufs (blancs + jaunes) sans les battre en neige`,
     ingredients: [
-      new Ingredient('farine', 250, 'g'),
-      new Ingredient('levure chimique', 0.5),
+      new Ingredient('farine', 200, 'g'),
+      new Ingredient('levure chimique', 1),
       new Ingredient('oeufs', 3),
-      new Ingredient('huile d\'olive', 12, 'cl'),
-      new Ingredient('lait', 12, 'cl'),
-      new Ingredient('gousse d\'ail', 2),
-      new Ingredient('olives', 20),
-      new Ingredient('tomates séchées', 15),
-      new Ingredient('gruyère rapé', 80, 'g'),
-      new Ingredient('comté', 40, 'g'),
+      new Ingredient('huile d\'olive', 10, 'cl'),
+      new Ingredient('lait', 10, 'cl'),
+      new Ingredient('olives', 150, 'g'),
+      new Ingredient('tomates séchées', 150, 'g'),
+      new Ingredient('gruyère rapé', 100, 'g'),
       new Ingredient('poivre'),
       new Ingredient('sel'),
     ],
     steps: [
-      'Éplucher et hacher l\'ail. Couper les olives en morceaux, ainsi que les tomates séchées.',
-      'Mélanger la farine avec la levure, ajouter les jaunes d\'œufs, le lait et l\'huile progressivement en fouettant. Poivrer.',
-      'Battre les blancs en neige avec une pincée de sel. Les incorporer délicatement à la préparation.',
-      'Ajouter les morceaux d\'olive, de tomate séchée, et l\'ail, ainsi que les fromages râpés. Bien mélanger.',
-      'Verser l\'appareil dans un moule à cake, faire cuire au four préchauffé à 200°C, thermostat 6-7, pendant 45 minutes. Laisser refroidir.',
+      'Dans un saladier, mettre la farine, la levure, les oeufs, le sel, le poivre et l\'huile.',
+      'Bien mélanger puis ajouter le lait, le fromage râpé, les olives égouttées et les lardons.',
+      'Verser la préparation dans un moule à cake.',
+      'Mettre au four 45 minutes à 200°C..',
     ]
   },
   {
@@ -366,7 +362,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Sauce pour salade de pâte',
-    type: RecetteType.SEASONING,
+    type: RecetteType.MEAL,
     prepTime: 5,
     cookingTime: 0,
     image: '',
@@ -386,7 +382,7 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
   },
   {
     name: 'Vinaigrette pour salade de riz',
-    type: RecetteType.SEASONING,
+    type: RecetteType.MEAL,
     prepTime: 5,
     cookingTime: 0,
     image: '',
@@ -404,6 +400,77 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Salez, poivrez.',
       'Ajoutez la ciboulette ciselée.',
       'Versez cette vinaigrette sur la salade de riz.',
+    ]
+  },
+  {
+    name: 'Houmous betterave chèvre',
+    type: RecetteType.APERITIF,
+    prepTime: 5,
+    cookingTime: 0,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('betterave (cuite)', 150, 'g'),
+      new Ingredient('pois chiches égouttés', 265, 'g'),
+      new Ingredient('ail', 2, 'gousses'),
+      new Ingredient('chèvre', 125, 'g'),
+      new Ingredient('huile d\'olive'),
+      new Ingredient('tahini', 1, 'c.à.s'),
+      new Ingredient('coriandre, poivre, sel'),
+    ],
+    steps: [
+      'Egouttez les betteraves.',
+      'Rincez et égouttez les pois chiches.',
+      'Mixer les ingrédients jusqu\'à l\'obtention d\'une crème homogène.',
+    ]
+  },
+  {
+    name: 'Houmous tomates séchées',
+    type: RecetteType.APERITIF,
+    prepTime: 5,
+    cookingTime: 0,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('pois chiches égouttés', 400, 'g'),
+      new Ingredient('tomates séchées', 160, 'g'),
+      new Ingredient('huile d\'olive', 4, 'c.à.s'),
+      new Ingredient('tahini', 4, 'c.à.c'),
+      new Ingredient('citron', 1),
+      new Ingredient('ail', 1, 'gousse'),
+      new Ingredient('cumin', 1, 'c.à.c'),
+      new Ingredient('aneth, ciboulette, poivre, sel'),
+    ],
+    steps: [
+      'Dans un mixeur versez les pois chiches, l\'ail, le tahini, le cumin et l\'huile d\'olive.',
+      'Ajoutez le jus de citron et les tomates séchées. Salez et poivrez',
+      'Mixez le tout jusqu\'à l\'obtention d\'une texture lisse et mousseuse.',
+    ]
+  },
+  {
+    name: 'Escalope de dinde paprika et herbes',
+    type: RecetteType.MEAL,
+    prepTime: 5,
+    cookingTime: 5,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('escalopes de dinde', 2, 'g'),
+      new Ingredient('huile d\'olive', 2, 'c.à.s'),
+      new Ingredient('paprika', 1, 'c.à.s'),
+      new Ingredient('origan', 1, 'c.à.c'),
+      new Ingredient('herbes de provence', 1, 'c.à.c'),
+      new Ingredient('ail en poudre', 1, 'c.à.c'),
+      new Ingredient('poivre, sel'),
+    ],
+    steps: [
+      'Mélangez toutes les épices dans un plat.',
+      'Ajoutez les escalopes et imprégnez les de la marinade.',
+      'Laissez mariner quelques heures au frigo.',
+      'Cuire les escalopes avec la marinade en les retournant régulièrement',
     ]
   },
 ]
