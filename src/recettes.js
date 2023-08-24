@@ -450,6 +450,33 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
     ]
   },
   {
+    name: 'Houmous de courgettes',
+    type: RecetteType.APERITIF,
+    prepTime: 10,
+    cookingTime: 0,
+    image: '',
+    nbPersonnes: 4,
+    comment: ``,
+    ingredients: [
+      new Ingredient('courgettes', 400, 'g'),
+      new Ingredient('ail', 1/2, 'gousse'),
+      new Ingredient('jus de citron', 1.5, 'c.à.s'),
+      new Ingredient('fromage frais', 0.5, 'c.à.s'),
+      new Ingredient('tahini', 1.5, 'c.à.c'),
+      new Ingredient('huile de sésame', 0.5, 'c.à.c'),
+      new Ingredient('cumin', 0.5, 'c.à.c'),
+      new Ingredient('coriandre', 0.5, 'c.à.c'),
+    ],
+    steps: [
+      'Lavez les courgettes, puis coupez-les en tronçons sans les peler.',
+      'Faites-les cuire à la vapeur pendant 5 min. Pendant ce temps, épluchez et écrasez l\'ail.',
+      'Quand les tronçons de courgettes sont cuits, égouttez-les dans une passoire, puis laissez-les refroidir.',
+      'Mettez les tronçons de courgettes avec tous les autres ingrédients dans le robot mixeur.',
+      'Mixez pendant plusieurs secondes jusqu\'à obtenir une purée bien lisse et homogène.',
+      ' Goûtez, puis rectifiez l\'assaisonnement en sel ou en cumin si besoin.',
+    ]
+  },
+  {
     name: 'Escalope de dinde paprika et herbes',
     type: RecetteType.MEAL,
     prepTime: 5,
@@ -470,7 +497,32 @@ Remplacez les tomates par d'autres légumes lorsqu'elles ne sont pas de saison: 
       'Mélangez toutes les épices dans un plat.',
       'Ajoutez les escalopes et imprégnez les de la marinade.',
       'Laissez mariner quelques heures au frigo.',
-      'Cuire les escalopes avec la marinade en les retournant régulièrement',
+      'Cuire les escalopes avec la marinade en les retournant régulièrement.',
+    ]
+  },
+  {
+    name: 'Coulis de tomates',
+    type: RecetteType.MEAL,
+    prepTime: 10,
+    cookingTime: 20,
+    image: '',
+    nbPersonnes: 6,
+    comment: ``,
+    ingredients: [
+      new Ingredient('tomates', 9),
+      new Ingredient('huile d\'olive', 6, 'c.à.s'),
+      new Ingredient('sucre', 1, 'c.à.s'),
+      new Ingredient('basilic', 6, 'feuilles'),
+      new Ingredient('ail', 3, 'gousses'),
+      new Ingredient('poivre, sel'),
+    ],
+    steps: [
+      'Taillez une croix à la base des tomates.',
+      'Plongez les dans une casserole d\'eau bouillante puis stoppez la cuisson en les passant sous l\'eau glacée.',
+      'Retirez la peau et épépinez les tomates',
+      'Faitez chauffer l\huile dans une grande casserole, ajoutez les tomates, l\'ail écrasé, le basilic et le sucre.',
+      'Salez, poivrez et laissez mijoter 20 min à petit feu.',
+      'Mixez le coulis plus ou moins finement selon les goûts.',
     ]
   },
 ]
