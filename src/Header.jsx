@@ -3,7 +3,7 @@ import { ButtonGroup, Button, Row } from "react-bootstrap";
 import { RecetteType } from "./recettes";
 
 export function Header() {
-  const [filter] = useState(RecetteType.ENTREE);
+  const [filter] = useState(RecetteType.APERITIF);
 
   const filteredRecettes = 
   return (

@@ -6,7 +6,7 @@ import { SelectedRecipe } from './components/selectedRecipe';
 import './App.css';
 
 function App() {
-  const [filter, setFilter] = useState(RecetteType.ENTREE);
+  const [filter, setFilter] = useState(RecetteType.APERITIF);
   const [selectedRecipe, setSelectedRecipe] = useState();
 
   return (

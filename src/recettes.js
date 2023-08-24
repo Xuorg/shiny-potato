@@ -1,8 +1,8 @@
 export const RecetteType = {
+  APERITIF: 'Apéro',
   ENTREE: 'Entrée',
   MEAL: 'Plat',
   DESSERT: 'Dessert',
-  APERITIF: 'Apéro',
 }
 
 class Ingredient {
